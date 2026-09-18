@@ -142,6 +142,27 @@ header h1 {
   transform: scale(1.1);
 }
 
+.Card-pokemonid{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.pokemon-Number{
+ border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  margin-bottom: 10px;
+  background-color: var(--darker-bg);
+}
+.pokemon-Number span{
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+  padding-right: 5px;
+  font-family: "Pixelify Sans", sans-serif;
+
+}
 .pokemon-name {
   text-transform: capitalize;
   font-size: 1.5rem;
@@ -156,7 +177,7 @@ header h1 {
 .pokemon-info{
   background-color: var(--darker-bg);
   border-radius: 10px;
-  padding: 2px;
+  padding: 7px;
 }
 .pokemon-info span {
   font-weight: 600;

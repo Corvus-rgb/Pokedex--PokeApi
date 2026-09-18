@@ -11,13 +11,20 @@ export const PokemonCards = ({ pokemonData }) => {
           className="pokemon-image"
         />
       </figure>
+    <div className="Card-pokemonid">
+            <div className="pokemon-Number">
+              <img src="/src/assets/pokeball.png" alt="Pokeball"/>
+              <span className="pokemon-id">#{pokemonData.id}</span>
+             </div>
+               
       <h1 className="pokemon-name">{pokemonData.name}</h1>
+    </div>
       <div className="pokemon-info pokemon-highlight">
         <p>
           {pokemonData.types.map((curType) => curType.type.name).join(", ")}
         </p>
       </div>
-
+    
       <div className="grid-three-cols">
         <div className="pokemon-info">
           <span>Height</span>
