@@ -3,7 +3,10 @@ export const PokemonCards = ({ pokemonData }) => {
     <li className="pokemon-card">
       <figure>
         <img
-          src={pokemonData.sprites.front_default}
+          src={
+            pokemonData.sprites?.versions?.['generation-v']?.['black-white']?.animated
+              ?.front_default ?? pokemonData.sprites?.front_default
+          }
           alt={pokemonData.name}
           className="pokemon-image"
         />
@@ -16,12 +19,14 @@ export const PokemonCards = ({ pokemonData }) => {
       </div>
 
       <div className="grid-three-cols">
-        <p className="pokemon-info">
-          <span>Height</span> <p>{pokemonData.height}</p>
-        </p>
-        <p className="pokemon-info">
-          <span>Weight</span> <p>{pokemonData.weight}</p>
-        </p>
+        <div className="pokemon-info">
+          <span>Height</span>
+          <p>{pokemonData.height}</p>
+        </div>
+        <div className="pokemon-info">
+          <span>Weight</span>
+          <p>{pokemonData.weight}</p>
+        </div>
       </div>
       <div className="grid-three-cols">
         <div className="pokemon-info">
@@ -31,6 +36,15 @@ export const PokemonCards = ({ pokemonData }) => {
               .map((abilityInfo) => abilityInfo.ability.name)
               .slice(0, 1)
               .join(", ")}
+          </p>
+        </div>
+        <div className="pokemon-info">
+          <span>Hidden Ability</span>
+          <p>
+            {pokemonData.abilities
+              .filter((abilityInfo) => abilityInfo.is_hidden)
+              .map((abilityInfo) => abilityInfo.ability.name)
+              .join(", ") || "N/A"}
           </p>
         </div>
       </div>
