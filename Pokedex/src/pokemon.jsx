@@ -8,7 +8,7 @@ export const Pokemon = () => {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
 
-  const API = "https://pokeapi.co/api/v2/pokemon?limit=400";
+  const API = "https://pokeapi.co/api/v2/pokemon?limit=809";
 
   useEffect(() => {
     let isMounted = true;
@@ -97,7 +97,9 @@ export const Pokemon = () => {
         {/* Mensaje de Pok-not found*/}
         {searchData.length === 0 && search && (
           <div className="no-results">
+            
             <p>No Pokémon found matching "{search}"</p>
+            <span> <img src="/src/assets/unown.png" alt="Unown"/>  </span> 
           </div>
         )}
 

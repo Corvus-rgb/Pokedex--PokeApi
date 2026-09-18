@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
 :root {
   --primary-color: #DEDEDE;
   --secondary-color: #f7eded;
@@ -217,9 +216,10 @@ header h1 {
   width: 50vw;
 }
 .loading span{
-  font-family: "Inconsolata", monospace;
+  font-family: "pixelify sans", sans-serif;
   font-size: 2rem;
   font-weight: 600;
+  padding-top: 20px;
 }
 .add-more {
   display: flex;
@@ -261,40 +261,25 @@ header h1 {
   padding: 20px;
   border-radius: 20px;
 }
-/* Responsive*/
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .cards {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-  }
-
-  .pokemon-card {
-    padding: 15px;
-  }
-
-  .pokemon-image {
-    max-width: 150px;
-    height: 150px;
-  }
-
-  .grid-three-cols {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    font-size: 0.9rem;
-  }
-  .loading img{
-    width: 80vw;
-  }
+.no-results {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 0, 0, 0.089);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  margin: 20px 0;
+  color: #726f6f;
 }
 
+.no-results p {
+  font-size: 1rem;
+  font-style: italic;
+}
+.no-results img {
+  width: 100px;
+  height: auto;
+  justify-self: center;
+}
 @media screen and (max-width: 480px) {
   .pokemon-search input {
     width: 100%;
@@ -310,17 +295,39 @@ header h1 {
     font-size: 1.3rem;
   }
 }
-.no-results {
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(255, 0, 0, 0.05);
-  border: 1px solid rgba(255, 0, 0, 0.2);
-  border-radius: var(--border-radius);
-  margin: 20px 0;
-  color: #666;
-}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.no-results p {
-  font-size: 1rem;
-  font-style: italic;
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+
+  }
+
+  .pokemon-card {
+    
+  }
+
+  .pokemon-image {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .grid-three-cols {
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+  .loading img{
+    width: 80vw;
+   
+    
+  }
 }
