@@ -19,7 +19,8 @@ El proyecto incluye las siguientes funcionalidades:
 
   
 - mensaje de error "pokemon no encontrado" - -----------
-  <img width="356" height="182" alt="unknown" src="https://github.com/user-attachments/assets/a9c50016-f5be-4d0d-9129-74bf94e4b3d0" />
+ <img width="644" height="276" alt="unknown" src="https://github.com/user-attachments/assets/12fb0fdf-b010-439c-b2a1-b68cf965ceaf" />
+
 
 
 
