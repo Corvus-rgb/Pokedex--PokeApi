@@ -11,11 +11,11 @@ utilizando los sprites de la quinta generacion y simulando un entorno en bits.
 ------------------------------------------------------------
 El proyecto incluye las siguientes funcionalidades: 
 - pantalla de carga -
-<img width="655" height="513" alt="Screenshot 2026-09-21 at 22-07-10 pokedex" src="https://github.com/user-attachments/assets/37c34b60-c1c4-438d-a0a8-045c66b0c933" width="250" height="200" />
+<img width="655" height="513" alt="Screenshot 2026-09-21 at 22-07-10 pokedex" src="https://github.com/user-attachments/assets/37c34b60-c1c4-438d-a0a8-045c66b0c933" width="150" height="100" />
 - barra de busqueda - 
-  <img width="1118" height="477" alt="barra busqueda" src="https://github.com/user-attachments/assets/7d705dd4-198e-4da2-8582-f75a86092d31" width="250" height="200" />
+  <img width="1118" height="477" alt="barra busqueda" src="https://github.com/user-attachments/assets/7d705dd4-198e-4da2-8582-f75a86092d31" width="150" height="100" />
 - mensaje de error "pokemon no encontrado" -
-  <img width="890" height="514" alt="Screenshot 2026-09-21 at 22-05-33 pokedex" src="https://github.com/user-attachments/assets/a41776f3-ab85-4a5b-8b72-dcc46e9b3185" width="250" height="200" />
+  <img width="890" height="514" alt="Screenshot 2026-09-21 at 22-05-33 pokedex" src="https://github.com/user-attachments/assets/a41776f3-ab85-4a5b-8b72-dcc46e9b3185" width="150" height="100" />
 
 
 
