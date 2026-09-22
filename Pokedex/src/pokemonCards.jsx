@@ -20,10 +20,18 @@ export const PokemonCards = ({ pokemonData }) => {
       <h1 className="pokemon-name">{pokemonData.name}</h1>
     </div>
       <div className="pokemon-info pokemon-highlight">
-        <p>
-          {pokemonData.types.map((curType) => curType.type.name).join(", ")}
-        </p>
-      </div>
+  <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' }}>
+    {pokemonData.types.map((curType) => {
+      const typename = curType.type.name;
+      
+      return (
+        <span key={typename} className={`pokemon-type ${typename}`}>
+          {typename}
+        </span>
+      );
+    })}
+  </div>
+</div>
     
       <div className="grid-three-cols">
         <div className="pokemon-info">

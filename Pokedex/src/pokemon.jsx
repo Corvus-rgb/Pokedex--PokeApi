@@ -8,7 +8,7 @@ export const Pokemon = () => {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
 
-  const API = "https://pokeapi.co/api/v2/pokemon?limit=809";
+  const API ="https://pokeapi.co/api/v2/pokemon?limit=500";
 
   useEffect(() => {
     let isMounted = true;
@@ -48,7 +48,6 @@ export const Pokemon = () => {
     };
   }, [API]);
 
-  // Search functionality
   const searchData = pokemon.filter((curPokemon) =>
     curPokemon.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -66,12 +65,14 @@ export const Pokemon = () => {
   }
 
   if (error) {
-    return (
-      <div className="error">
-        <h1 className="error-msg"><i class="ri-error-warning-line"></i> Error! Could not connect to API</h1>
-      </div>
-    );
-  }
+  return (
+    <div className="error">
+      <h1 className="error-msg">
+        <i className="ri-error-warning-line"></i> Error
+      </h1>
+    </div>
+  );
+}
 
   return (
     <>
