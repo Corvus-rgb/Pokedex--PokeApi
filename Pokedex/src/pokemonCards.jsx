@@ -13,7 +13,7 @@ export const PokemonCards = ({ pokemonData }) => {
       </figure>
     <div className="Card-pokemonid">
             <div className="pokemon-Number">
-              <img src="/src/assets/pokeball.png" alt="Pokeball"/>
+              <img src="/pokeball.png" alt="Pokeball"/>
               <span className="pokemon-id">#{pokemonData.id}</span>
              </div>
                

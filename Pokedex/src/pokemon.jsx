@@ -56,7 +56,7 @@ export const Pokemon = () => {
     return (
       <div className="loading">
         <img
-          src="/src/assets/porygonZ.gif"
+          src="/porygonZ.gif"
           alt="Loading"
         />
         <span>Calculating...</span>
@@ -80,7 +80,7 @@ export const Pokemon = () => {
         <header className="title">
           <h1>PokéApi</h1>
           <img
-            src="/src/assets/porygon1.gif"
+            src="/porygon1.gif"
             alt="Porygon1"
           />
           <h1>Archive</h1>
@@ -100,7 +100,7 @@ export const Pokemon = () => {
           <div className="no-results">
             
             <p>No Pokémon found matching "{search}"</p>
-            <span> <img src="/src/assets/unown.png" alt="Unown"/>  </span> 
+            <span> <img src="/unown.png" alt="Unown"/>  </span> 
           </div>
         )}
 
