@@ -5,6 +5,8 @@ Proyecto para Diplomatura como Front-End dev. Aplicación de Gestión de Recurso
 Descripción + funciones extra. ---> Aplicación de los recursos de la Api en cards- simulación tipo Pokedex.
 / pagina en ingles; para incluirlo como parte del porfolio de proyectos /
 
+///abajo de la descripcion se incluyen los pasos para la ejecucion local del proyecto// 
+
 El estilo principal de esta pagina esta inspirada en la pokexed de  Teselia. (pokemon blanco/2 y negro/2)
 utilizando los sprites de la quinta generación y simulando un entorno en bits.
 <img width="1118" height="477" alt="Comparasion" src="https://github.com/user-attachments/assets/bbf6fa2a-ffa3-427a-aba0-33a98a762ced" />
@@ -21,6 +23,24 @@ El proyecto incluye las siguientes funcionalidades:
 - mensaje de error "pokemon no encontrado" - -----------
  <img width="644" height="276" alt="unknown" src="https://github.com/user-attachments/assets/12fb0fdf-b010-439c-b2a1-b68cf965ceaf" />
 
+_______________________________________________________________________________________
+EJECUCIÓN LOCAL DEL PROYECTO -- VITE y Nodejs
+
+1. Abrir Terminal y ejecutar el comando: npm init vite@latest
+2. Ingresa el nombre de la carpeta principal
+3. desplázate hacia seleccionar React.
+ Variante: JavaScript.
+4. Instalación: Entra a la carpeta (en este caso: cd pokedex) y ejecuta el comando npm install en la terminal para
+bajar las herramientas que se incluirán a la carpeta de archivos.
+5. para su ejecución escribe npm run dev y abre el link que te da la consola - "follow link". Esto
+levantará un servidor local rápido. (http://localhost:5173)
+podes hacer Ctrl + C en la URL que te muestre la terminal y copiarla en el navegador para ver tu App
+en vivo. Si necesitas detener el servidor presiona Ctrl + C.
+
+/nota: en este caso, no funcionara la extencion de live server, debes seguir los pasos anteriormente para poder visualizar tu pagina junto con los cambios que estas realizando. 
+
+Posteriormente, podras realizar el deployment del sitio en plataformas como, en este caso, Vercel + github.
+Para acceder a la pagina de este proyecto: https://pokedex-poke-api-zeta.vercel.app/
 
 
 
