@@ -55,7 +55,7 @@ export const Pokemon = () => {
   if (loading) {
     return (
       <div className="loading">
-        <img src="/porygonZ.gif" alt="Loading"/>
+        <img src="/loading.gif" alt="Loading"/>
         <span>Calculating...</span>
       </div>
     );
