@@ -196,8 +196,13 @@ header h1 {
 
 .pokemon-highlight {
   background-color: var(--card-background);
-  font-family: "Pixelify Sans", sans-serif;
+  
 }
+.pokemon-highlight span {
+  font-family: "Pixelify Sans", sans-serif;
+  color: var(--secondary-color);
+}
+
 .pokemon-type {
   display: inline-block;
   padding: 6px 14px;
