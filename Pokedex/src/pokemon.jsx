@@ -55,14 +55,11 @@ export const Pokemon = () => {
   if (loading) {
     return (
       <div className="loading">
-        <img
-          src="/porygonZ.gif"
-          alt="Loading"
-        />
+        <img src="/porygonZ.gif" alt="Loading"/>
         <span>Calculating...</span>
       </div>
     );
-  }
+}
 
   if (error) {
   return (
